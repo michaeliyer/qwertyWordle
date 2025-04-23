@@ -6,6 +6,12 @@ let selectedLetter = null;
 let selectedPosition = null;
 let filterHistory = [];
 
+// Theme toggle functionality
+let isCyberMode = false;
+const themeToggle = document.getElementById("themeToggle");
+const themeStylesheet = document.getElementById("theme-stylesheet");
+const cyberLetters = document.getElementById("cyberLetters");
+
 // Create the keyboard layout
 const keyboardLayout = [
   ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
@@ -41,6 +47,9 @@ function setupEventListeners() {
   document.getElementById("backButton").addEventListener("click", handleBack);
   document.getElementById("resetButton").addEventListener("click", handleReset);
   document.getElementById("clearButton").addEventListener("click", handleClear);
+
+  // Theme toggle functionality
+  themeToggle.addEventListener("click", toggleTheme);
 }
 
 function handleFilterClick(filter) {
@@ -277,4 +286,32 @@ function displayResults(results) {
     </div>
     <div class="words-list">${wordsList}</div>
   `;
+}
+
+// Create falling letters
+function createFallingLetters() {
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const container = document.getElementById("cyberLetters");
+
+  for (let i = 0; i < 50; i++) {
+    const letter = document.createElement("div");
+    letter.className = "cyber-letter";
+    letter.textContent = letters[Math.floor(Math.random() * letters.length)];
+    letter.style.setProperty("--random", Math.random());
+    letter.style.left = `${Math.random() * 100}%`;
+    container.appendChild(letter);
+  }
+}
+
+// Toggle theme
+function toggleTheme() {
+  isCyberMode = !isCyberMode;
+  themeStylesheet.disabled = !isCyberMode;
+  themeToggle.textContent = isCyberMode ? "Normal Mode" : "Cyber Mode";
+
+  if (isCyberMode) {
+    createFallingLetters();
+  } else {
+    cyberLetters.innerHTML = "";
+  }
 }

@@ -1,0 +1,203 @@
+:root {
+  --cyber-bg: #1a1a1a;
+  --cyber-primary: #00ff9d;
+  --cyber-secondary: #00b8ff;
+  --cyber-accent: #ff00ff;
+  --cyber-text: #ffffff;
+  --cyber-grey: #2a2a2a;
+  --cyber-grey-light: #3a3a3a;
+  --cyber-grey-dark: #1a1a1a;
+}
+
+body {
+  background-color: var(--cyber-bg);
+  color: var(--cyber-text);
+  font-family: "Orbitron", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Animated background letters */
+.cyber-letters {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.cyber-letter {
+  position: absolute;
+  color: rgba(0, 255, 157, 0.1);
+  font-size: 1.5rem;
+  animation: fall linear infinite;
+  animation-duration: calc(10s + (var(--random) * 10s));
+  animation-delay: calc(var(--random) * 5s);
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* App container */
+.app-container {
+  background: linear-gradient(
+    145deg,
+    var(--cyber-grey-dark),
+    var(--cyber-grey)
+  );
+  border: 1px solid var(--cyber-primary);
+  box-shadow: 0 0 20px rgba(0, 255, 157, 0.2), 0 0 40px rgba(0, 184, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--cyber-primary),
+    var(--cyber-secondary),
+    var(--cyber-accent)
+  );
+  animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Buttons */
+.filter-button,
+.position-button,
+.nav-button {
+  background: var(--cyber-grey-light);
+  border: 1px solid var(--cyber-primary);
+  color: var(--cyber-text);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-button:hover,
+.position-button:hover,
+.nav-button:hover {
+  background: var(--cyber-primary);
+  color: var(--cyber-grey-dark);
+  box-shadow: 0 0 15px var(--cyber-primary);
+  transform: translateY(-2px);
+}
+
+.filter-button.active,
+.position-button.active {
+  background: var(--cyber-primary);
+  color: var(--cyber-grey-dark);
+  box-shadow: 0 0 15px var(--cyber-primary);
+}
+
+/* Keyboard */
+.keyboard-container {
+  background: var(--cyber-grey);
+  border: 1px solid var(--cyber-secondary);
+  box-shadow: 0 0 20px rgba(0, 184, 255, 0.2);
+}
+
+.key {
+  background: var(--cyber-grey-light);
+  border: 1px solid var(--cyber-secondary);
+  color: var(--cyber-text);
+  transition: all 0.2s ease;
+}
+
+.key:hover {
+  background: var(--cyber-secondary);
+  color: var(--cyber-grey-dark);
+  box-shadow: 0 0 10px var(--cyber-secondary);
+}
+
+/* Results section */
+.results-section {
+  background: var(--cyber-grey);
+  border: 1px solid var(--cyber-accent);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.1);
+}
+
+.results-header {
+  border-bottom: 1px solid var(--cyber-accent);
+  color: var(--cyber-primary);
+}
+
+.words-list {
+  color: var(--cyber-text);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--cyber-primary);
+  color: var(--cyber-grey-dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px var(--cyber-primary);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.theme-toggle:hover {
+  background: var(--cyber-secondary);
+  box-shadow: 0 0 20px var(--cyber-secondary);
+  transform: translateY(-2px);
+}
+
+/* Selection display */
+.selection-display {
+  background: var(--cyber-grey-light);
+  border: 1px solid var(--cyber-primary);
+  box-shadow: 0 0 15px rgba(0, 255, 157, 0.1);
+}
+
+.selection-label {
+  color: var(--cyber-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.selection-value {
+  color: var(--cyber-text);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}

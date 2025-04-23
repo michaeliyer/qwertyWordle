@@ -290,15 +290,57 @@ function displayResults(results) {
 
 // Create falling letters
 function createFallingLetters() {
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const container = document.getElementById("cyberLetters");
+  if (!container) return;
 
-  for (let i = 0; i < 50; i++) {
+  // Clear existing letters
+  container.innerHTML = "";
+
+  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const numLetters = 50; // Increased number for better coverage
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
+
+  // Create a grid of potential starting positions
+  const gridSize = 10;
+  const positions = [];
+  for (let i = 0; i < gridSize; i++) {
+    for (let j = 0; j < gridSize; j++) {
+      positions.push({
+        x: (i / gridSize) * viewportWidth,
+        y: (j / gridSize) * viewportHeight,
+      });
+    }
+  }
+
+  // Shuffle positions
+  for (let i = positions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [positions[i], positions[j]] = [positions[j], positions[i]];
+  }
+
+  for (let i = 0; i < numLetters; i++) {
     const letter = document.createElement("div");
     letter.className = "cyber-letter";
-    letter.textContent = letters[Math.floor(Math.random() * letters.length)];
+    letter.textContent = alphabet[Math.floor(Math.random() * alphabet.length)];
+
+    // Use shuffled positions
+    const pos = positions[i % positions.length];
+    const randomOffset = (Math.random() - 0.5) * 100; // Random offset for more scatter
+
+    // Random animation duration between 4-6 seconds for more consistent falling
+    const duration = 4 + Math.random() * 2;
+
+    // Set CSS custom properties
     letter.style.setProperty("--random", Math.random());
-    letter.style.left = `${Math.random() * 100}%`;
+    letter.style.setProperty("--duration", `${duration}s`);
+    letter.style.left = `${pos.x + randomOffset}px`;
+    letter.style.top = `-50px`; // Start above the viewport
+
+    // Random rotation and scale for more variety
+    letter.style.setProperty("--rotation", `${Math.random() * 360}deg`);
+    letter.style.setProperty("--scale", `${0.8 + Math.random() * 0.4}`);
+
     container.appendChild(letter);
   }
 }

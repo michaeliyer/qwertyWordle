@@ -41,6 +41,7 @@ function setupEventListeners() {
   // Navigation button click handlers
   document.getElementById("backButton").addEventListener("click", handleBack);
   document.getElementById("resetButton").addEventListener("click", handleReset);
+  document.getElementById("clearButton").addEventListener("click", handleClear);
 }
 
 function handleFilterClick(filter) {
@@ -206,6 +207,29 @@ function handleReset() {
 
   updateUI();
   displayResults(filteredWords);
+}
+
+function handleClear() {
+  // Clear letter and position selections
+  selectedLetter = null;
+  selectedPosition = null;
+
+  // Update UI
+  document.querySelectorAll(".position-button").forEach((btn) => {
+    btn.classList.remove("active");
+  });
+
+  // Keep position buttons visible if the filter type requires them
+  if (
+    activeFilter &&
+    (activeFilter === "containsLetterAtPosition" ||
+      activeFilter === "containsLetterNotAtPosition")
+  ) {
+    document.querySelector(".position-buttons").classList.remove("hidden");
+  }
+
+  updateUI();
+  // Don't change filteredWords or filterHistory
 }
 
 function createKeyboard() {

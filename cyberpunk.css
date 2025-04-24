@@ -8,6 +8,7 @@
   --cyber-grey-light: #3a3a3a;
   --cyber-grey-dark: #1a1a1a;
   --cyber-eliminated: #ff0000;
+  --cyber-confirmed: #00ff00;
 }
 
 body {
@@ -170,7 +171,16 @@ body {
   cursor: not-allowed;
 }
 
-.key:hover:not(.eliminated) {
+.key.confirmed {
+  background: var(--cyber-confirmed);
+  border: 1px solid var(--cyber-confirmed);
+  color: var(--cyber-grey-dark);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.key:hover:not(.eliminated):not(.confirmed) {
   background: var(--cyber-secondary);
   color: var(--cyber-grey-dark);
   box-shadow: 0 0 10px var(--cyber-secondary);

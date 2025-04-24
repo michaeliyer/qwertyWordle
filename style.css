@@ -7,6 +7,7 @@
   --button-height: 40px;
   --disco-colors: #ff00ff, #00ffff, #ff00ff, #00ffff;
   --eliminated-color: #ff0000;
+  --confirmed-color: #00ff00;
 }
 
 * {
@@ -229,7 +230,15 @@ h1 {
   cursor: not-allowed;
 }
 
-.key:hover:not(.eliminated) {
+.key.confirmed {
+  background: var(--confirmed-color);
+  color: var(--background-color);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.key:hover:not(.eliminated):not(.confirmed) {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-3px);
   box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);

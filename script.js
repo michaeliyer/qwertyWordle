@@ -122,8 +122,28 @@ function handleKeyPress(key) {
   filteredWords = applyFilter(filteredWords, newFilter);
   filterHistory.push(newFilter);
 
+  // Update keyboard keys
+  updateKeyboardKeys();
   updateUI();
   displayResults(filteredWords);
+}
+
+function updateKeyboardKeys() {
+  const keyboardKeys = document.querySelectorAll(".key");
+  const eliminatedLetters = new Set();
+
+  // Find all eliminated letters
+  filterHistory.forEach((filter) => {
+    if (filter.type === "doesNotContainLetter") {
+      eliminatedLetters.add(filter.letter);
+    }
+  });
+
+  // Update each key
+  keyboardKeys.forEach((key) => {
+    const letter = key.dataset.key;
+    key.classList.toggle("eliminated", eliminatedLetters.has(letter));
+  });
 }
 
 function applyFilter(words, filter) {
@@ -192,6 +212,7 @@ function handleBack() {
           activeFilter !== "containsLetterNotAtPosition")
     );
 
+  updateKeyboardKeys();
   updateUI();
   displayResults(filteredWords);
 }
@@ -213,6 +234,7 @@ function handleReset() {
   });
   document.querySelector(".position-buttons").classList.add("hidden");
 
+  updateKeyboardKeys();
   updateUI();
   displayResults(filteredWords);
 }
@@ -236,6 +258,7 @@ function handleClear() {
     document.querySelector(".position-buttons").classList.remove("hidden");
   }
 
+  updateKeyboardKeys();
   updateUI();
   // Don't change filteredWords or filterHistory
 }
@@ -297,7 +320,7 @@ function createFallingLetters() {
   container.innerHTML = "";
 
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const numLetters = 50; // Increased number for better coverage
+  const numLetters = 500; // Increased number for better coverage
   const viewportWidth = window.innerWidth;
   const viewportHeight = window.innerHeight;
 
@@ -357,6 +380,3 @@ function toggleTheme() {
     cyberLetters.innerHTML = "";
   }
 }
-
-
-

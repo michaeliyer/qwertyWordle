@@ -6,6 +6,7 @@
   --key-size: 40px;
   --button-height: 40px;
   --disco-colors: #ff00ff, #00ffff, #ff00ff, #00ffff;
+  --eliminated-color: #ff0000;
 }
 
 * {
@@ -220,7 +221,15 @@ h1 {
   overflow: hidden;
 }
 
-.key:hover {
+.key.eliminated {
+  background: var(--eliminated-color);
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.key:hover:not(.eliminated) {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-3px);
   box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);

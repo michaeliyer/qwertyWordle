@@ -1318,7 +1318,7 @@ export const fixedWordsLarge = [
 console.log("Fuck man");
 
 export const dailyWordsSmall = [
-    'ABBOT', 'ABHOR', 'ABLED', 'ABODE', 'ABORT', 'ABUSE', 'ADEPT', 'ADMIN',
+    'ABBOT', 'ABHOR', 'ABLED', 'ABODE', 'ABORT', 'ABUSE', 'ADMIN',
     'ADORN', 'AFIRE', 'AFOOT', 'AFOUL', 'AIDER', 'ALARM', 'ALGAE',
     'ALIBI', 'ALIGN', 'ALLAY', 'ALLEY', 'ALLOT', 'ALLOY', 'ALONG', 'AMAZE', 'AMEND',
     'AMITY', 'AMONG', 'AMPLY', 'AMUSE', 'ANIME', 'ANKLE', 'ANNEX', 'ANNOY',
@@ -1458,7 +1458,7 @@ export const dailyWordsLarge = [
     'ACING', 'ACINI', 'ACKEE', 'ACMES', 'ACMIC', 'ACNED', 'ACNES', 'ACOCK', 'ACOLD', 
     'ACRED', 'ACRES', 'ACROS', 'ACTED', 'ACTIN', 'ACTON', 'ACYLS',
     'ADAWS', 'ADAYS', 'ADDAX', 'ADDED', 'ADDER', 'ADDIE', 'ADDLE', 'ADEEM',
-    'ADEPT', 'ADHAN', 'ADIEU', 'ADIOS', 'ADITS', 'ADMAN', 'ADMEN', 'ADMIN', 'ADMIX', 
+    'ADHAN', 'ADIEU', 'ADIOS', 'ADITS', 'ADMAN', 'ADMEN', 'ADMIN', 'ADMIX', 
     'ADOBI', 'ADOBO', 'ADORN', 'ADOWN', 'ADOZE', 'ADRAD', 'ADRED', 'ADSUM',
     'ADUKI', 'ADUNC', 'ADUST', 'ADVEW', 'ADYTA', 'ADZED', 'ADZES', 'AECIA', 'AEGIS',
     'AEONS', 'AERIE', 'AEROS', 'AESIR', 'AFALD', 'AFARA', 'AFARS', 'AFEAR', 'AFIRE',
@@ -11233,6 +11233,12 @@ export const wordleWords = [
         gameDate: "4/30/25",
         myScore: 4,
         wordNumber: 1411,
+      },
+      {
+        word: "ADEPT",
+        gameDate: "5/1/25",
+        myScore: 3,
+        wordNumber: 1412,
       },
   
   ];

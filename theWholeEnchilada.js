@@ -1441,7 +1441,7 @@ export const dailyWordsSmall = [
     'VIPER', 'VIRUS', 'VISIT', 'VISTA', 'VIXEN', 'VOCAL', 'VOGUE', 
     'VOMIT', 'VOWEL', 'WAGER', 'WAIST', 'WAIVE', 'WARTY', 'WATER',
     'WAVER', 'WAXEN', 'WEAVE', 'WEIGH', 'WELCH', 'WELSH', 'WHARF', 
-    'WHITE', 'WHOLE', 'WHOSE', 'WIDER', 'WIDOW', 'WIDTH', 'WIELD', 'WIGHT',
+    'WHITE', 'WHOLE', 'WIDER', 'WIDOW', 'WIDTH', 'WIELD', 'WIGHT',
     'WILLY', 'WIMPY', 'WINCH', 'WISER', 'WISPY', 'WITTY', 'WOMEN', 'WOODY', 'WOOLY',
     'WOOZY', 'WORTH', 'WOUND', 'WRACK', 'WRECK', 'WREST', 'WRING', 'WRYLY', 'YEAST',
     'ZONAL'
@@ -2706,7 +2706,7 @@ export const dailyWordsLarge = [
     'WHENS', 'WHETS', 'WHEWS', 'WHEYS', 'WHIDS', 'WHIFT', 'WHIGS',
     'WHILK', 'WHIMS', 'WHINS', 'WHIOS', 'WHIPS', 'WHIPT', 
     'WHIRR', 'WHIRS', 'WHISH', 'WHISS', 'WHIST', 'WHITE', 'WHITS', 'WHITY', 'WHIZZ',
-    'WHOLE', 'WHOMP', 'WHOOF', 'WHOOT', 'WHOPS', 'WHORE', 'WHORL', 'WHORT', 'WHOSE',
+    'WHOLE', 'WHOMP', 'WHOOF', 'WHOOT', 'WHOPS', 'WHORE', 'WHORL', 'WHORT', 
     'WHOSO', 'WHOWS', 'WHUMP', 'WHUPS', 'WHYDA', 'WICCA', 'WICKS', 'WICKY', 'WIDDY',
     'WIDER', 'WIDES', 'WIDOW', 'WIDTH', 'WIELD', 'WIELS', 'WIFED', 'WIFES', 'WIFEY', 'WIFIE',
     'WIFTY', 'WIGAN', 'WIGGY', 'WIGHT', 'WIKIS', 'WILCO', 'WILDS', 'WILED', 'WILES', 'WILGA',
@@ -11239,6 +11239,12 @@ export const wordleWords = [
         gameDate: "5/1/25",
         myScore: 3,
         wordNumber: 1412,
+      },
+      {
+        word: "WHOSE",
+        gameDate: "5/2/25",
+        myScore: 3,
+        wordNumber: 1413,
       },
   
   ];

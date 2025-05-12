@@ -1348,7 +1348,7 @@ export const dailyWordsSmall = [
     'DECOR', 'DEFER', 'DEIGN', 
     'DEMON', 'DEMUR', 'DENSE', 'DERBY', 'DETOX', 'DEUCE', 'DILLY', 'DIMLY',
     'DIODE', 'DIRTY', 'DITCH', 'DIVER', 'DIZZY', 'DODGY',
-    'DOGMA', 'DOUGH', 'DOWDY', 'DOWEL', 'DOWNY', 'DRAKE', 'DRAMA',
+    'DOGMA', 'DOUGH', 'DOWDY', 'DOWNY', 'DRAKE', 'DRAMA',
     'DRANK', 'DRAPE', 'DRAWL', 'DREAD', 'DRESS', 'DRIED', 'DRIER', 'DRIFT', 'DRILL',
     'DROIT', 'DRONE', 'DROSS', 'DROWN', 'DRUID', 'DRUNK', 'DRYLY',
     'DULLY', 'DUMPY', 'DUNCE', 'DUSKY', 'DUSTY', 'DYING', 'EAGER',  
@@ -1443,7 +1443,7 @@ export const dailyWordsSmall = [
     'WAVER', 'WAXEN', 'WEAVE', 'WEIGH', 'WELCH', 'WELSH', 'WHARF', 
     'WHITE', 'WHOLE', 'WIDER', 'WIDOW', 'WIDTH', 'WIELD', 'WIGHT',
     'WILLY', 'WIMPY', 'WINCH', 'WISER', 'WISPY', 'WITTY', 'WOMEN', 'WOODY', 'WOOLY',
-    'WOOZY', 'WORTH', 'WOUND', 'WRACK', 'WRECK', 'WREST', 'WRING', 'WRYLY', 'YEAST',
+    'WOOZY', 'WORTH', 'WOUND', 'WRACK', 'WRECK', 'WREST', 'WRING', 'WRYLY', 
     'ZONAL'
 ];
 
@@ -1750,7 +1750,7 @@ export const dailyWordsLarge = [
     'DOSAI', 'DOSAS', 'DOSED', 'DOSEH', 'DOSER', 'DOSES', 'DOSHA', 'DOTAL', 'DOTED', 'DOTER',
     'DOTES', 'DOTTY', 'DOUAR', 'DOUCE', 'DOUCS', 'DOUGH', 'DOUKS', 'DOULA', 'DOUMA',
     'DOUMS', 'DOUPS', 'DOURA', 'DOUSE', 'DOUTS', 'DOVED', 'DOVEN', 'DOVER', 'DOVES', 'DOVIE',
-    'DOWAR', 'DOWDS', 'DOWDY', 'DOWED', 'DOWEL', 'DOWER', 'DOWIE', 'DOWLE', 'DOWLS', 'DOWLY',
+    'DOWAR', 'DOWDS', 'DOWDY', 'DOWED', 'DOWER', 'DOWIE', 'DOWLE', 'DOWLS', 'DOWLY',
     'DOWNA', 'DOWNS', 'DOWNY', 'DOWPS', 'DOWSE', 'DOWTS', 'DOXED', 'DOXES', 'DOXIE',
     'DOYEN', 'DOYLY', 'DOZED', 'DOZER', 'DOZES', 'DRABS', 'DRACK', 'DRACO', 'DRAFF',
     'DRAGS', 'DRAIL', 'DRAKE', 'DRAMA', 'DRAMS', 'DRANK', 'DRANT', 'DRAPE',
@@ -2732,7 +2732,7 @@ export const dailyWordsLarge = [
     'YANKS', 'YAPOK', 'YAPON', 'YAPPS', 'YAPPY', 'YARAK', 'YARCO', 'YARDS', 'YARER', 'YARFA',
     'YARKS', 'YARNS', 'YARRS', 'YARTA', 'YARTO', 'YATES', 'YAUDS', 'YAULD', 'YAUPS', 'YAWED',
     'YAWEY', 'YAWLS', 'YAWNS', 'YAWNY', 'YAWPS', 'YBORE', 'YCLAD', 'YCLED', 'YCOND', 'YDRAD',
-    'YDRED', 'YEADS', 'YEAHS', 'YEALM', 'YEANS', 'YEARD', 'YEARS', 'YEAST', 'YECCH',
+    'YDRED', 'YEADS', 'YEAHS', 'YEALM', 'YEANS', 'YEARD', 'YEARS', 'YECCH',
     'YECHS', 'YECHY', 'YEDES', 'YEEDS', 'YEESH', 'YEGGS', 'YELKS', 'YELLS', 'YELMS', 'YELPS',
     'YELTS', 'YENTA', 'YENTE', 'YERBA', 'YERDS', 'YERKS', 'YESES', 'YESKS', 'YESTS', 'YESTY',
     'YETIS', 'YETTS', 'YEUKS', 'YEUKY', 'YEVEN', 'YEVES', 'YEWEN', 'YEXED', 'YEXES', 'YFERE',
@@ -11287,6 +11287,18 @@ export const wordleWords = [
         gameDate: "5/9/25",
         myScore: 3,
         wordNumber: 1420,
+      },
+      {
+        word: "YEAST",
+        gameDate: "5/10/25",
+        myScore: 3,
+        wordNumber: 1421,
+      },
+      {
+        word: "DOWEL",
+        gameDate: "5/11/25",
+        myScore: 4,
+        wordNumber: 1422,
       },
   
   ];

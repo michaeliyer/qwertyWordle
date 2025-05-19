@@ -11336,7 +11336,11 @@ export const wordleWords = [
         myScore: 4,
         wordNumber: 1428,
       },
+<<<<<<< Updated upstream
       {
+=======
+            {
+>>>>>>> Stashed changes
         word: "LIVID",
         gameDate: "5/18/25",
         myScore: 4,

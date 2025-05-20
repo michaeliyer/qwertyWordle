@@ -11330,22 +11330,18 @@ export const wordleWords = [
         myScore: 4,
         wordNumber: 1427,
       },
-      {
-        word: "GROWN",
-        gameDate: "5/17/25",
-        myScore: 4,
-        wordNumber: 1428,
-      },
-<<<<<<< Updated upstream
-      {
-=======
-            {
->>>>>>> Stashed changes
-        word: "LIVID",
-        gameDate: "5/18/25",
-        myScore: 4,
-        wordNumber: 1429,
-      },
+  {
+    word: "GROWN",
+    gameDate: "5/17/25",
+    myScore: 4,
+    wordNumber: 1428,
+  },
+  {
+    word: "LIVID",
+    gameDate: "5/18/25",
+    myScore: 4,
+    wordNumber: 1429,
+  },
   ];
 
 export const letterValues = {

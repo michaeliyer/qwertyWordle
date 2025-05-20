@@ -1394,7 +1394,7 @@ export const dailyWordsSmall = [
     'OVARY', 'OVATE', 'OVINE', 'OVOID', 'OWING', 'PADDY', 'PAGAN',
     'PALER', 'PALSY', 'PANSY', 'PARKA', 'PARSE', 'PASTE', 'PASTY', 
     'PAYEE', 'PAYER', 'PECAN', 'PENAL', 'PENCE', 'PENNY',
-    'PEONY', 'PERIL', 'PESTO', 'PETAL', 'PETTY', 'PIGGY', 'PITCH', 'PIVOT', 'PIZZA',
+    'PEONY', 'PERIL', 'PESTO', 'PETAL', 'PETTY', 'PIGGY', 'PIVOT', 'PIZZA',
     'PLAID', 'PLAIN', 'PLANE', 'PLEAD', 'PLIED', 'PLIER', 'PLUME', 'PLUMP', 'PLUSH',
     'POESY', 'POLAR', 'POOCH', 'POPPY', 'POSER', 'POSIT', 'POSSE', 'POUCH', 'POUTY',
     'PRANK', 'PRAWN', 'PREEN', 'PRIED', 'PRISM', 'PRIVY',  
@@ -2279,7 +2279,7 @@ export const dailyWordsLarge = [
     'PINNA', 'PINNY', 'PINON', 'PINOT', 'PINTA', 'PINTS', 'PINUP', 'PIONS', 'PIONY',
     'PIOYE', 'PIOYS', 'PIPAL', 'PIPAS', 'PIPED', 'PIPES', 'PIPET', 'PIPIS',
     'PIPIT', 'PIPPY', 'PIPUL', 'PIRAI', 'PIRLS', 'PIRNS', 'PIROG', 'PISCO', 'PISES',
-    'PISKY', 'PISOS', 'PISSY', 'PISTE', 'PITAS', 'PITCH', 'PITHS', 'PITON', 'PITOT',
+    'PISKY', 'PISOS', 'PISSY', 'PISTE', 'PITAS', 'PITHS', 'PITON', 'PITOT',
     'PITTA',
     'PIUMS', 'PIVOT', 'PIXES', 'PIZED', 'PIZES', 'PIZZA', 'PLAAS',
     'PLACK', 'PLAGE', 'PLAID', 'PLAIN', 'PLANE', 'PLANS', 'PLAPS',
@@ -11330,18 +11330,24 @@ export const wordleWords = [
         myScore: 4,
         wordNumber: 1427,
       },
-  {
-    word: "GROWN",
-    gameDate: "5/17/25",
-    myScore: 4,
-    wordNumber: 1428,
-  },
-  {
-    word: "LIVID",
-    gameDate: "5/18/25",
-    myScore: 4,
-    wordNumber: 1429,
-  },
+      {
+        word: "GROWN",
+        gameDate: "5/17/25",
+        myScore: 4,
+        wordNumber: 1428,
+      },
+      {
+        word: "LIVID",
+        gameDate: "5/18/25",
+        myScore: 4,
+        wordNumber: 1429,
+      },
+      {
+        word: "PITCH",
+        gameDate: "5/19/25",
+        myScore: 3,
+        wordNumber: 1430,
+      },
   ];
 
 export const letterValues = {

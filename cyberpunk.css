@@ -9,6 +9,7 @@
   --cyber-grey-dark: #1a1a1a;
   --cyber-eliminated: #ff0000;
   --cyber-confirmed: #00ff00;
+  --cyber-present: #ff9900;
 }
 
 body {
@@ -180,7 +181,16 @@ body {
   cursor: not-allowed;
 }
 
-.key:hover:not(.eliminated):not(.confirmed) {
+.key.present {
+  background: var(--cyber-present);
+  border: 1px solid var(--cyber-present);
+  color: var(--cyber-grey-dark);
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.key:hover:not(.eliminated):not(.confirmed):not(.present) {
   background: var(--cyber-secondary);
   color: var(--cyber-grey-dark);
   box-shadow: 0 0 10px var(--cyber-secondary);

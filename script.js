@@ -132,13 +132,16 @@ function updateKeyboardKeys() {
   const keyboardKeys = document.querySelectorAll(".key");
   const eliminatedLetters = new Set();
   const confirmedLetters = new Set();
+  const presentLetters = new Set();
 
-  // Find all eliminated and confirmed letters
+  // Find all eliminated, confirmed, and present letters
   filterHistory.forEach((filter) => {
     if (filter.type === "doesNotContainLetter") {
       eliminatedLetters.add(filter.letter);
     } else if (filter.type === "containsLetterAtPosition") {
       confirmedLetters.add(filter.letter);
+    } else if (filter.type === "containsLetterNotAtPosition") {
+      presentLetters.add(filter.letter);
     }
   });
 
@@ -147,6 +150,12 @@ function updateKeyboardKeys() {
     const letter = key.dataset.key;
     key.classList.toggle("eliminated", eliminatedLetters.has(letter));
     key.classList.toggle("confirmed", confirmedLetters.has(letter));
+    key.classList.toggle(
+      "present",
+      presentLetters.has(letter) &&
+        !confirmedLetters.has(letter) &&
+        !eliminatedLetters.has(letter)
+    );
   });
 }
 

@@ -1360,7 +1360,7 @@ export const dailyWordsSmall = [
     'FETAL', 'FETCH', 'FETID', 'FETUS', 'FICUS', 'FIERY', 
     'FIGHT', 'FILER', 'FILLY', 'FILMY', 'FILTH', 'FIZZY', 'FLACK', 'FLAKY',
     'FLECK', 'FLEET', 'FLIER', 'FLUID', 'FLUKE', 
-    'FLUSH', 'FLUTE', 'FOIST', 'FOLIO', 'FORUM', 'FRAUD',
+    'FLUSH', 'FLUTE', 'FOIST', 'FORUM', 'FRAUD',
     'FREAK', 'FREED', 'FREER', 'FRIAR', 'FRILL', 'FRISK', 'FRITZ', 'FRUIT', 'FUCKO', 'FUDGE',
     'FUGUE', 'FUNKY', 'FUROR', 'FURRY', 'FUSSY', 'GABLE', 'GAFFE', 'GAILY',  
     'GASSY', 'GAUGE', 'GAVEL', 'GAYER', 'GAYLY', 'GAZER', 'GEEKY', 'GEESE',  
@@ -1841,7 +1841,7 @@ export const dailyWordsLarge = [
     'FLUID', 'FLUKE', 'FLUKY', 'FLUMP', 'FLUOR', 'FLURR', 'FLUSH',
     'FLUTE', 'FLUTY', 'FLUYT', 'FLYBY', 'FLYPE', 'FLYTE', 'FOALS', 'FOAMS', 
     'FOEHN', 'FOGEY', 'FOGIE', 'FOGLE', 'FOGOU', 'FOHNS', 'FOIDS',
-    'FOILS', 'FOINS', 'FOIST', 'FOLDS', 'FOLEY', 'FOLIA', 'FOLIC', 'FOLIE', 'FOLIO', 'FOLKS',
+    'FOILS', 'FOINS', 'FOIST', 'FOLDS', 'FOLEY', 'FOLIA', 'FOLIC', 'FOLIE', 'FOLKS',
     'FOLKY', 'FOMES', 'FONDA', 'FONDS', 'FONDU', 'FONES', 'FONLY', 'FONTS', 'FOODS',
     'FOODY', 'FOOLS', 'FOOTS', 'FOOTY', 'FORAM', 'FORBS', 'FORBY', 'FORDO',
     'FORDS', 'FOREL', 'FORES', 'FOREX', 'FORKS', 'FORKY', 'FORME', 'FORMS',
@@ -11357,6 +11357,12 @@ export const wordleWords = [
       {
         word: "ALARM",
         gameDate: "5/21/25",
+        myScore: 3,
+        wordNumber: 1432,
+      }
+      {
+        word: "FOLIO",
+        gameDate: "5/22/25",
         myScore: 3,
         wordNumber: 1432,
       }

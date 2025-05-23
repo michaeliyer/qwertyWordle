@@ -11359,7 +11359,7 @@ export const wordleWords = [
         gameDate: "5/21/25",
         myScore: 3,
         wordNumber: 1432,
-      }
+      },
       {
         word: "FOLIO",
         gameDate: "5/22/25",

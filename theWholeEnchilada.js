@@ -1,3 +1,4 @@
+
 export const fixedWordsLarge = [
     'QQQQQ', 'ZZZZZ', 'JJJJJ', 'QQZZJ', 'KKKJJ', 'JQQZZ', 'JZZQQ', 'QQJZZ', 'ZZJQQ', 'QQJZX', 
     'AAHED', 'AALII', 'AARGH', 'AARTI', 'ABACA', 'ABACI', 'ABACK', 'ABACS', 'ABAFT', 'ABAKA',
@@ -2540,7 +2541,7 @@ export const dailyWordsLarge = [
     'STUMS', 'STUNK', 'STUNS', 'STUNT', 'STUPA', 'STUPE', 'STURE', 'STURT', 'STYED',
     'STYES', 'STYLI', 'STYLO', 'STYME', 'STYMY', 'STYRE', 'STYTE', 'SUBAH',
     'SUBAS', 'SUBBY', 'SUBER', 'SUBHA', 'SUCCI', 'SUCKS', 'SUCKY', 'SUCRE', 'SUDDS', 'SUDOR',
-    'SUDSY', 'SUEDE', 'SUENT', 'SUERS', 'SUETE', 'SUETS', 'SUETY', 'SUGAN', 'SUGHS',
+    'SUDSY', 'SUENT', 'SUERS', 'SUETE', 'SUETS', 'SUETY', 'SUGAN', 'SUGHS',
     'SUGOS', 'SUHUR', 'SUIDS', 'SUING', 'SUINT', 'SUITS', 'SUJEE', 'SUKHS', 'SUKUK',
     'SULCI', 'SULFA', 'SULFO', 'SULKS', 'SULLY', 'SULPH', 'SULUS', 'SUMAC', 'SUMIS',
     'SUMMA', 'SUMOS', 'SUMPH', 'SUMPS', 'SUNIS', 'SUNKS', 'SUNNA', 'SUNNS', 'SUNUP',
@@ -11371,6 +11372,12 @@ export const wordleWords = [
         gameDate: "5/23/25",
         myScore: 3,
         wordNumber: 1434,
+      },
+      {
+        word: "SUEDE",
+        gameDate: "5/24/25",
+        myScore: 3,
+        wordNumber: 1435,
       }
   ];
 

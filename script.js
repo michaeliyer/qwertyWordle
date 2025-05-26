@@ -316,10 +316,46 @@ function displayResults(results) {
   const wordsList = results.join(", ");
   const totalWords = results.length;
 
+  // Calculate letter frequencies
+  const frequencies = {};
+  for (let i = 0; i < 26; i++) {
+    frequencies[String.fromCharCode(65 + i)] = 0;
+  }
+  results.forEach((word) => {
+    for (const char of word.toUpperCase()) {
+      if (frequencies.hasOwnProperty(char)) {
+        frequencies[char]++;
+      }
+    }
+  });
+
+  // Render frequency bar as a table
+  const freqBar = `
+    <table class="letter-frequency-bar" style="margin: 0.5em auto 1em auto; border-collapse: collapse;">
+      <tr>
+        ${Object.keys(frequencies)
+          .map(
+            (l) =>
+              `<th style="padding:2px 4px; font-weight:bold; font-size:0.95em;">${l}</th>`
+          )
+          .join("")}
+      </tr>
+      <tr>
+        ${Object.values(frequencies)
+          .map(
+            (c) =>
+              `<td style="padding:2px 4px; font-size:0.95em; text-align:center;">${c}</td>`
+          )
+          .join("")}
+      </tr>
+    </table>
+  `;
+
   resultsDiv.innerHTML = `
     <div class="results-header">
       <span class="total-words">Total Words: ${totalWords}</span>
     </div>
+    ${freqBar}
     <div class="words-list">${wordsList}</div>
   `;
 }

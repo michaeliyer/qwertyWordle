@@ -329,23 +329,23 @@ function displayResults(results) {
     }
   });
 
-  // Render frequency bar as a table
+  // Render frequency bar as a table with zero class
   const freqBar = `
     <table class="letter-frequency-bar" style="margin: 0.5em auto 1em auto; border-collapse: collapse;">
       <tr>
         ${Object.keys(frequencies)
-          .map(
-            (l) =>
-              `<th style="padding:2px 4px; font-weight:bold; font-size:0.95em;">${l}</th>`
-          )
+          .map((l) => {
+            const zero = frequencies[l] === 0 ? "letter-zero" : "";
+            return `<th class="${zero}" style="padding:2px 4px; font-weight:bold; font-size:0.95em;">${l}</th>`;
+          })
           .join("")}
       </tr>
       <tr>
         ${Object.values(frequencies)
-          .map(
-            (c) =>
-              `<td style="padding:2px 4px; font-size:0.95em; text-align:center;">${c}</td>`
-          )
+          .map((c, i) => {
+            const zero = c === 0 ? "letter-zero" : "";
+            return `<td class="${zero}" style="padding:2px 4px; font-size:0.95em; text-align:center;">${c}</td>`;
+          })
           .join("")}
       </tr>
     </table>

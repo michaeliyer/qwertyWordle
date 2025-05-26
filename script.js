@@ -429,3 +429,5 @@ function toggleTheme() {
     cyberLetters.innerHTML = "";
   }
 }
+
+console.log(keyboardLayout);

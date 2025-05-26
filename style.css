@@ -52,7 +52,7 @@ body::before {
   padding: 2rem;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+  box-shadow: 0 0 20px rgba(254, 0, 254, 0.3);
   animation: fadeIn 1s ease-out;
   position: relative;
   z-index: 2;

@@ -1,6 +1,12 @@
-import { wordleWords, dailyWordsSmall } from "./theWholeEnchilada.js";
+import {
+  wordleWords,
+  dailyWordsSmall,
+  dailyWordsLarge,
+} from "./theWholeEnchilada.js";
 
-let filteredWords = [...dailyWordsSmall];
+let usingLargeList = false;
+let currentWordList = [...dailyWordsSmall];
+let filteredWords = [...currentWordList];
 let activeFilter = null;
 let selectedLetter = null;
 let selectedPosition = null;
@@ -24,6 +30,33 @@ document.addEventListener("DOMContentLoaded", () => {
   setupEventListeners();
   updateUI();
   displayResults(filteredWords);
+
+  // Word list toggle button
+  document.getElementById("wordlistToggle").addEventListener("click", () => {
+    usingLargeList = !usingLargeList;
+    currentWordList = usingLargeList
+      ? [...dailyWordsLarge]
+      : [...dailyWordsSmall];
+    document.getElementById("wordlistToggle").textContent = usingLargeList
+      ? "Use Small Word List"
+      : "Use Large Word List";
+    // Reset everything
+    filteredWords = [...currentWordList];
+    filterHistory = [];
+    activeFilter = null;
+    selectedLetter = null;
+    selectedPosition = null;
+    document
+      .querySelectorAll(".filter-button")
+      .forEach((btn) => btn.classList.remove("active"));
+    document
+      .querySelectorAll(".position-button")
+      .forEach((btn) => btn.classList.remove("active"));
+    document.querySelector(".position-buttons").classList.add("hidden");
+    updateKeyboardKeys();
+    updateUI();
+    displayResults(filteredWords);
+  });
 });
 
 function setupEventListeners() {
@@ -61,7 +94,7 @@ function handleFilterClick(filter) {
   // Update active filter
   if (activeFilter === filter) {
     activeFilter = null;
-    filteredWords = [...dailyWordsSmall];
+    filteredWords = [...currentWordList];
     filterHistory = [];
   } else {
     activeFilter = filter;
@@ -187,7 +220,7 @@ function handleBack() {
   filterHistory.pop();
 
   // Reset to initial state
-  filteredWords = [...dailyWordsSmall];
+  filteredWords = [...currentWordList];
 
   // Reapply all remaining filters
   filterHistory.forEach((filter) => {
@@ -235,7 +268,7 @@ function handleReset() {
   activeFilter = null;
   selectedLetter = null;
   selectedPosition = null;
-  filteredWords = [...dailyWordsSmall];
+  filteredWords = [...currentWordList];
   filterHistory = [];
 
   // Reset UI

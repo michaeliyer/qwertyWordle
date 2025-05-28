@@ -462,3 +462,24 @@ h1 {
   background: #2a2a2a;
   opacity: 0.8;
 }
+
+.wordlist-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #222;
+  color: #fff;
+  border: 2px solid #ff00ff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-family: "Orbitron", Arial, sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.wordlist-toggle:hover {
+  background: #ff00ff;
+  color: #222;
+  border-color: #fff;
+}

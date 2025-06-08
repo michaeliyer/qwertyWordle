@@ -1404,7 +1404,7 @@ export const dailyWordsSmall = [
     'RABBI', 'RABID', 'RACER', 'RADAR', 'RADII', 'RAJAH', 'RALLY', 'RALPH', 'RANDY',
     'RARER', 'RASPY', 'RATTY', 'RAVEN', 'RAZOR', 'REARM', 'REBAR', 
     'RECUT', 'REEDY', 'REFIT', 'REHAB', 'REIGN', 'RELAY', 'REMIT',
-    'RENAL', 'REPLY', 'RESET', 'REUSE', 'RICER', 'RIFLE', 'RIGID',
+    'RENAL', 'REPLY', 'RESET', 'RICER', 'RIFLE', 'RIGID',
     'RIGOR', 'RINSE', 'RIPEN', 'RISER', 'RISKY', 'RIVER', 'ROAST', 'ROGER',
     'ROOST', 'ROTOR', 'ROWDY', 'RUGBY', 'RULER', 'RUMOR', 'RURAL',
     'SADLY', 'SAFER', 'SALON', 'SALVE', 'SALVO', 'SANER', 'SAPPY', 'SATIN', 'SATYR', 
@@ -2365,7 +2365,7 @@ export const dailyWordsLarge = [
     'REPLA', 'REPLY', 'REPOS', 'REPOT', 'REPPS', 'REPRO', 'RERAN', 'RERIG', 'RESAT',
     'RESAW', 'RESAY', 'RESEE', 'RESES', 'RESET', 'RESEW', 'RESID', 'RESIT', 'RESOD',
     'RESOW', 'RESTO', 'RESTS', 'RESTY', 'RESUS', 'RETAG', 'RETAX', 'RETEM', 'RETIA',
-    'RETIE', 'RETOX', 'REUSE', 'REVET', 'REVIE', 'REWAN',
+    'RETIE', 'RETOX', 'REVET', 'REVIE', 'REWAN',
     'REWAX', 'REWED', 'REWET', 'REWIN', 'REWON', 'REWTH', 'REXES', 'REZES',
     'RHEAS', 'RHEME', 'RHEUM', 'RHIES', 'RHIME', 'RHINE', 'RHODY', 'RHOMB', 'RHONE',
     'RHUMB', 'RHYNE', 'RHYTA', 'RIADS', 'RIALS', 'RIANT', 'RIATA', 'RIBAS', 'RIBBY',
@@ -11455,6 +11455,12 @@ export const wordleWords = [
         gameDate: "6/6/25",
         myScore: 3,
         wordNumber: 1448,
+      },  
+      {
+        word: "REUSE",
+        gameDate: "6/7/25",
+        myScore: 4,
+        wordNumber: 1449,
       },  
     
   ];

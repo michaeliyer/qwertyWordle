@@ -1553,7 +1553,7 @@ export const dailyWordsLarge = [
     'BIBBS', 'BIBES', 'BIBLE', 'BICCY', 'BICES', 'BIDDY', 'BIDED', 'BIDER', 'BIDES',
     'BIDET', 'BIDIS', 'BIDON', 'BIELD', 'BIERS', 'BIFFO', 'BIFFS', 'BIFFY', 'BIFID', 'BIGAE',
     'BIGGS', 'BIGGY', 'BIGHA', 'BIGHT', 'BIGLY', 'BIGOS', 'BIGOT', 'BIJOU', 'BIKED', 'BIKER',
-    'BIKES', 'BIKIE', 'BILBO', 'BILBY', 'BILED', 'BILES', 'BILGE', 'BILGY', 'BILKS', 'BILLS',
+    'BIKES', 'BIKIE', 'BILBO', 'BILBY', 'BILED', 'BILES', 'BILGY', 'BILKS', 'BILLS',
     'BILLY', 'BIMAH', 'BIMAS', 'BIMBO', 'BINAL', 'BINDI', 'BINDS', 'BINER', 'BINES', 
     'BINGO', 'BINGS', 'BINGY', 'BINIT', 'BINKS', 'BIOGS', 'BIONT', 'BIOTA', 'BIPED',
     'BIPOD', 'BIRDS', 'BIRKS', 'BIRLE', 'BIRLS', 'BIROS', 'BIRRS', 'BIRSE', 'BIRSY',
@@ -11493,6 +11493,7 @@ export const wordleWords = [
         myScore: 3,
         wordNumber: 1454,
       }, 
+
     
     
   ];

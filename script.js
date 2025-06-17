@@ -464,3 +464,4 @@ function toggleTheme() {
 }
 
 console.log(keyboardLayout);
+console.log("WTF?")

@@ -166,6 +166,8 @@ function updateKeyboardKeys() {
   const eliminatedLetters = new Set();
   const confirmedLetters = new Set();
   const presentLetters = new Set();
+  // Map: letter -> Set of unavailable positions (1-5)
+  const presentPositions = {};
 
   // Find all eliminated, confirmed, and present letters
   filterHistory.forEach((filter) => {
@@ -175,6 +177,9 @@ function updateKeyboardKeys() {
       confirmedLetters.add(filter.letter);
     } else if (filter.type === "containsLetterNotAtPosition") {
       presentLetters.add(filter.letter);
+      if (!presentPositions[filter.letter])
+        presentPositions[filter.letter] = new Set();
+      presentPositions[filter.letter].add(filter.position);
     }
   });
 
@@ -189,6 +194,24 @@ function updateKeyboardKeys() {
         !confirmedLetters.has(letter) &&
         !eliminatedLetters.has(letter)
     );
+    // Remove any old indicators
+    key.querySelectorAll(".key-position-indicator").forEach((e) => e.remove());
+    // Add position indicators for present keys
+    if (
+      presentLetters.has(letter) &&
+      !confirmedLetters.has(letter) &&
+      !eliminatedLetters.has(letter) &&
+      presentPositions[letter]
+    ) {
+      [...presentPositions[letter]].forEach((pos) => {
+        if (pos >= 1 && pos <= 5) {
+          const span = document.createElement("span");
+          span.className = `key-position-indicator pos-${pos}`;
+          span.textContent = pos;
+          key.appendChild(span);
+        }
+      });
+    }
   });
 }
 
@@ -464,4 +487,4 @@ function toggleTheme() {
 }
 
 console.log(keyboardLayout);
-console.log("WTF?")
+console.log("WTF?");

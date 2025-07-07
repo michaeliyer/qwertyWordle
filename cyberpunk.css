@@ -186,7 +186,7 @@ body {
   border: 1px solid var(--cyber-present);
   color: var(--cyber-grey-dark);
   box-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
-  opacity: 0.9;
+  opacity: 0.89;
   cursor: not-allowed;
 }
 

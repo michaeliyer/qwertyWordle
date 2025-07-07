@@ -487,4 +487,4 @@ function toggleTheme() {
 }
 
 console.log(keyboardLayout);
-console.log("WTF?");
+console.log("WTF? Seriously....");

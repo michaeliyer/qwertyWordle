@@ -1,4 +1,5 @@
 
+
 export const fixedWordsLarge = [
     'QQQQQ', 'ZZZZZ', 'JJJJJ', 'QQZZJ', 'KKKJJ', 'JQQZZ', 'JZZQQ', 'QQJZZ', 'ZZJQQ', 'QQJZX', 
     'AAHED', 'AALII', 'AARGH', 'AARTI', 'ABACA', 'ABACI', 'ABACK', 'ABACS', 'ABAFT', 'ABAKA',
@@ -1333,7 +1334,7 @@ export const dailyWordsSmall = [
     'BLOAT', 'BLOOD', 'BLOOM', 'BLUER', 'BLUNT', 'BOBBY', 'BONEY', 
     'BOOTH', 'BOSOM', 'BOTCH', 'BOULE', 'BOUND', 'BOWEL', 
     'BRAWL', 'BRICK', 'BROIL',
-    'BROOD', 'BROWN', 'BRUNT', 'BUDGE', 'BULGE', 'BUNNY', 'BURST', 'BUSED', 
+    'BROOD', 'BROWN', 'BRUNT', 'BUDGE', 'BULGE', 'BUNNY', 'BURNT', 'BURST', 'BUSED', 
     'BUSHY', 'BUTCH', 'BUTTE', 'BUXOM', 'BUYER', 'BYLAW', 'CABAL', 'CABBY', 'CABIN', 'CACTI', 
     'CADDY', 'CAGEY', 'CAIRN', 'CANAL', 
     'CAPUT', 'CASTE', 'CATTY', 'CAVIL', 'CELLO', 'CHAFF', 'CHAIR',
@@ -1440,7 +1441,7 @@ export const dailyWordsSmall = [
     'UNION', 'UNITY', 'UNSET', 'UNWED', 'URINE', 'UTILE', 'VALOR', 'VALVE', 'VAPOR',
     'VAUNT', 'VEGAN', 'VENUE', 'VERSO', 'VICAR', 'VIGIL', 
     'VIPER', 'VIRUS', 'VISIT', 'VISTA', 'VOCAL', 'VOGUE', 
-    'VOMIT', 'VOWEL', 'WAGER', 'WAIST', 'WAIVE', 'WARTY', 'WATER',
+    'VOMIT', 'VOWEL', 'WAGER', 'WAIST', 'WAIVE', 'WARTY', 
     'WAVER', 'WAXEN', 'WEAVE', 'WEIGH', 'WELCH', 'WELSH', 'WHARF', 
     'WHITE', 'WHOLE', 'WIDER', 'WIDOW', 'WIDTH', 'WIELD', 'WIGHT',
     'WILLY', 'WIMPY', 'WINCH', 'WISER', 'WISPY', 'WOMEN', 'WOODY', 'WOOLY',
@@ -1605,7 +1606,7 @@ export const dailyWordsLarge = [
     'BUNCO', 'BUNDE', 'BUNDH', 'BUNDS', 'BUNDT', 'BUNDU', 'BUNDY', 'BUNGS', 'BUNGY', 'BUNIA',
     'BUNJE', 'BUNJY', 'BUNKO', 'BUNKS', 'BUNNS', 'BUNNY', 'BUNTS', 'BUNTY', 'BUNYA', 'BUOYS',
     'BUPPY', 'BURAN', 'BURAS', 'BURBS', 'BURDS', 'BURET', 'BURFI', 'BURGH', 'BURGS', 'BURIN',
-    'BURKA', 'BURKE', 'BURKS', 'BURLS', 'BURNS', 'BUROO', 'BURPS', 'BURQA',
+    'BURKA', 'BURKE', 'BURKS', 'BURLS', 'BURNS', 'BURNT', 'BUROO', 'BURPS', 'BURQA',
     'BURRO', 'BURRS', 'BURRY', 'BURSA', 'BURSE', 'BURST', 'BUSBY', 'BUSED', 'BUSES', 'BUSHY',
     'BUSKS', 'BUSKY', 'BUSSU', 'BUSTI', 'BUSTS', 'BUSTY', 'BUTCH', 'BUTEO', 'BUTES', 'BUTLE',
     'BUTOH', 'BUTTE', 'BUTTS', 'BUTTY', 'BUTUT', 'BUTYL', 'BUXOM', 'BUYER', 'BUZZY', 'BWANA',
@@ -2693,7 +2694,7 @@ export const dailyWordsLarge = [
     'WAMUS', 'WANDS', 'WANED', 'WANES', 'WANEY', 'WANGS', 'WANKS', 'WANKY', 'WANLE', 'WANLY',
     'WANNA', 'WANTS', 'WANTY', 'WANZE', 'WAQFS', 'WARBS', 'WARBY', 'WARDS', 'WARED', 'WARES',
     'WAREZ', 'WARKS', 'WARMS', 'WARNS', 'WARPS', 'WARRE', 'WARST', 'WARTS', 'WARTY', 'WASES',
-    'WASHY', 'WASMS', 'WASPS', 'WASPY', 'WASTS', 'WATAP', 'WATER', 'WATTS',
+    'WASHY', 'WASMS', 'WASPS', 'WASPY', 'WASTS', 'WATAP', 'WATTS',
     'WAUFF', 'WAUGH', 'WAUKS', 'WAULK', 'WAULS', 'WAURS', 'WAVED', 'WAVER', 'WAVES', 'WAVEY',
     'WAWAS', 'WAWES', 'WAWLS', 'WAXED', 'WAXEN', 'WAXER', 'WAXES', 'WAYED', 'WAZIR', 'WAZOO',
     'WEALD', 'WEALS', 'WEAMB', 'WEANS', 'WEARS', 'WEAVE', 'WEBBY', 'WEBER', 'WECHT',
@@ -11732,6 +11733,12 @@ export const wordleWords = [
         gameDate: "7/22/25",
         myScore: 3,
         wordNumber: 1494,
+      },  
+      {
+        word: "WATER",
+        gameDate: "7/21/25",
+        myScore: 3,
+        wordNumber: 1495,
       },  
     
   ];

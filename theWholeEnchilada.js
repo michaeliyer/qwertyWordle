@@ -1,5 +1,4 @@
 
-
 export const fixedWordsLarge = [
     'QQQQQ', 'ZZZZZ', 'JJJJJ', 'QQZZJ', 'KKKJJ', 'JQQZZ', 'JZZQQ', 'QQJZZ', 'ZZJQQ', 'QQJZX', 
     'AAHED', 'AALII', 'AARGH', 'AARTI', 'ABACA', 'ABACI', 'ABACK', 'ABACS', 'ABAFT', 'ABAKA',
@@ -11736,7 +11735,7 @@ export const wordleWords = [
       },  
       {
         word: "WATER",
-        gameDate: "7/21/25",
+        gameDate: "7/23/25",
         myScore: 3,
         wordNumber: 1495,
       },  

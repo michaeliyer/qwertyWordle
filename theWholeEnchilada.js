@@ -11910,7 +11910,8 @@ export const wordleWords = [
         gameDate: "8/21/25",
         myScore: 3,
         wordNumber: 1524,
-      },  
+      }, 
+      {
         word: "RATTY",
         gameDate: "8/22/25",
         myScore: 3,

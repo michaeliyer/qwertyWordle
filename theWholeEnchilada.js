@@ -11945,7 +11945,7 @@ console.log("Push, Stash, and Pop. What the Chryste!")
 console.log("August 4, 2025, Jackwagon. Dickerson. Eff On Off Guyo.")
 console.log("August 7, 2025, CORAL hits! Now what? Scion? Rinse? Caste? But CORAL HITS!")
 console.log("August 9, 2025, Mom: Hello" )
-console.log("August 23, 2025: Trump sux dykk0000! UNION")
+console.log("August 24, 2025: Trump sux dykk0000! SPORE")
 
 
 console.log(wordleWords)

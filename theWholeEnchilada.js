@@ -8683,7 +8683,7 @@ export const wordleWords = [
       },
       {
         word: "URBAN",
-        gameDate: "3/3/24",
+        gameDate: "3/2/24",
         myScore: 3,
         wordNumber: 987,
       },

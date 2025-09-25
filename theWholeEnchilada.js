@@ -12121,6 +12121,3 @@ function logOverallAverageScore() {
 }
 
 logOverallAverageScore();
-
-let x = "Fuck Off";
-console.log(x)

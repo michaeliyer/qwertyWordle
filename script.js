@@ -168,6 +168,8 @@ function updateKeyboardKeys() {
   const presentLetters = new Set();
   // Map: letter -> Set of unavailable positions (1-5)
   const presentPositions = {};
+  // Map: letter -> Set of confirmed positions (1-5)
+  const confirmedPositions = {};
 
   // Find all eliminated, confirmed, and present letters
   filterHistory.forEach((filter) => {
@@ -175,6 +177,9 @@ function updateKeyboardKeys() {
       eliminatedLetters.add(filter.letter);
     } else if (filter.type === "containsLetterAtPosition") {
       confirmedLetters.add(filter.letter);
+      if (!confirmedPositions[filter.letter])
+        confirmedPositions[filter.letter] = new Set();
+      confirmedPositions[filter.letter].add(filter.position);
     } else if (filter.type === "containsLetterNotAtPosition") {
       presentLetters.add(filter.letter);
       if (!presentPositions[filter.letter])
@@ -196,7 +201,20 @@ function updateKeyboardKeys() {
     );
     // Remove any old indicators
     key.querySelectorAll(".key-position-indicator").forEach((e) => e.remove());
-    // Add position indicators for present keys
+
+    // Add position indicators for confirmed keys (green)
+    if (confirmedLetters.has(letter) && confirmedPositions[letter]) {
+      [...confirmedPositions[letter]].forEach((pos) => {
+        if (pos >= 1 && pos <= 5) {
+          const span = document.createElement("span");
+          span.className = `key-position-indicator pos-${pos}`;
+          span.textContent = pos;
+          key.appendChild(span);
+        }
+      });
+    }
+
+    // Add position indicators for present keys (orange)
     if (
       presentLetters.has(letter) &&
       !confirmedLetters.has(letter) &&

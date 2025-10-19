@@ -1373,7 +1373,7 @@ export const dailyWordsSmall = [
     'HAREM', 'HARPY', 'HARRY', 'HASTE', 'HASTY', 'HAUTE', 
     'HEDGE', 'HIPPY', 'HOIST', 'HOLLY', 
     'HONOR', 'HORNY', 'HOTLY', 'HOVEL', 'HUMUS', 'HUSKY', 'HUSSY', 'HYDRO',
-    'HYMEN', 'ICILY', 'IDEAL', 'IDIOT', 'IDYLL', 'ILIAC', 
+    'HYMEN', 'ICILY', 'IDIOT', 'IDYLL', 'ILIAC', 
     'IMPLY', 'INGOT', 'INLET',  
     'JETTY', 'JOIST', 'JUICY', 'JUMBO', 'JUNTA',
     'JUNTO', 'JUROR', 'KAPPA', 'KINKY', 'KITTY', 'KNEED', 
@@ -1979,7 +1979,7 @@ export const dailyWordsLarge = [
     'HYLIC', 'HYMEN', 'HYMNS', 'HYNDE', 'HYOID', 'HYPED', 'HYPES', 'HYPHA', 'HYPHY',
     'HYPOS', 'HYRAX', 'HYSON', 'HYTHE', 'IAMBI', 'IAMBS', 'IBRIK', 'ICERS', 'ICHED', 'ICHES',
     'ICHOR', 'ICIER', 'ICILY', 'ICKER', 'ICKLE', 'ICONS', 'ICTAL', 'ICTIC', 'ICTUS',
-    'IDANT', 'IDEAL', 'IDEAS', 'IDEES', 'IDENT', 'IDIOT', 'IDLED', 'IDLES',
+    'IDANT', 'IDEAS', 'IDEES', 'IDENT', 'IDIOT', 'IDLED', 'IDLES',
     'IDOLA', 'IDOLS', 'IDYLL', 'IDYLS', 'IFTAR', 'IGAPO', 'IGGED', 'IGLUS', 'IHRAM',
     'IKANS', 'IKATS', 'IKONS', 'ILEAC', 'ILEAL', 'ILEUM', 'ILEUS', 'ILIAC', 'ILIAD', 'ILIAL',
     'ILIUM', 'ILLER', 'ILLTH', 'IMAGO', 'IMAMS', 'IMARI', 'IMAUM', 'IMBAR', 'IMBED',
@@ -12205,6 +12205,11 @@ export const wordleWords = [
         myScore: 3,
         wordNumber: 1582,
       },  
+      { word: "IDEAL",
+        gameDate: "10/19/25",
+        myScore: 2,
+        wordNumber: 1583,
+      },  
     
   ];
 
@@ -12221,7 +12226,7 @@ console.log("Push, Stash, and Pop. What the Chryste!")
 console.log("August 4, 2025, Jackwagon. Dickerson. Eff On Off Guyo.")
 console.log("August 7, 2025, CORAL hits! Now what? Scion? Rinse? Caste? But CORAL HITS!")
 console.log("August 9, 2025, Mom: Hello" )
-console.log("October 18, 2025: Trump sux dykk000000000! HAVEN")
+console.log("October 19, 2025: Trump sux dykk000000000! IDEAL")
 
 
 console.log(wordleWords)
